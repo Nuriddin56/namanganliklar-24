@@ -1,3 +1,36 @@
+/* rubik-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/rubik-v28-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v28-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @import "./vendors/normalize";
 @import "./abstract/veriables";
 @import "./abstract/functions";
@@ -8,3 +41,177 @@
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./pages/home.scss";
+
+/* main start*/
+
+.main {
+  margin-right: 120px;
+  margin-left: 185px;
+}
+.navbar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 120px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 34px;
+}
+
+.navbar ul li a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #7f7f7f;
+
+  &:hover {
+    color: #7296ec;
+  }
+}
+
+#color {
+  color: #7296ec;
+}
+
+.line {
+  width: 1195px;
+  border: 1px solid #d1d1d1;
+}
+.banner {
+  margin-right: 120px;
+}
+.banner-image {
+  margin-top: 40px;
+}
+
+/* section news card*/
+
+.-section-news-card {
+  width: 393px;
+  border-radius: 15px;
+  border: 2px solid #f6f6f6;
+  background-color: #f6f6f6;
+  margin-top: 50px;
+}
+
+.news-card {
+  margin-top: 20px;
+  margin-right: 18px;
+  margin-left: 17px;
+}
+
+.news-card h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.news-card h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.news-card a {
+  height: 66px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+  padding-top: 10px;
+}
+
+.news-source img {
+  height: 165px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-right: 17px;
+  margin-left: 17px;
+}
+
+.icon {
+  width: 170px;
+  height: 20px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 17px;
+  margin-bottom: 15px;
+}
+
+.icon img {
+  border-radius: 5px;
+}
+
+.icon span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+/* section wheat card*/
+
+.-section-wheat-card {
+  width: 394px;
+  border-radius: 15px;
+  border: 2px solid #f6f6f6;
+  background-color: #f6f6f6;
+  margin-left: 405px;
+  transform: translateY(-402.5px);
+}
+
+.wheat-card {
+  margin-top: 20px;
+  margin-left: 17px;
+}
+
+.wheat-card h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.wheat-card a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+  margin-top: 10px;
+}
+
+.wheat-source img {
+  height: 165px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+
+.icon-g {
+  display: flex;
+  border-radius: 5px;
+  margin-left: 17px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icon-g span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #5e5f61;
+  margin-top: 3px;
+  margin-left: 10px;
+}
