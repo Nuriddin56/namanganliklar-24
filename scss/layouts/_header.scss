@@ -42,6 +42,48 @@
 .search-bar {
   margin-bottom: 30px;
   margin-left: 265px;
+  border-radius: 12px;
+  color: #7aa5ff;
+  position: relative;
+  z-index: 1;
+}
+
+.search-bar::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  right: -5px;
+  bottom: +15px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  border-radius: 60px;
+  z-index: -1;
+  animation: rotate-border 3s linear infinite;
+  background-size: 300% 300%;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 4px;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .search-bar img {
@@ -67,6 +109,46 @@
   position: relative;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.language::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  right: -5px;
+  bottom: -4px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  border-radius: 39px;
+  z-index: -1;
+  animation: rotate-border 3s linear infinite;
+  background-size: 300% 300%;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 4px;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .language button {
@@ -147,7 +229,9 @@
   margin-left: 25px;
 
   &:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #7296ec;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
   }
 }
 
